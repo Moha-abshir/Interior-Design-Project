@@ -1,0 +1,93 @@
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   width: 80%;
+   height: 4em;
+   /* Fixed Positioning */
+   position: fixed;
+   top: 2rem;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1000;
+   border-radius: 50px;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.3rem;
+   cursor: pointer;
+}
+
+.logo p {
+   font-size: clamp(1rem, 1.5vw, 2rem);
+   font-weight: bold;
+   color: #000;
+   margin-top: 1rem;
+}
+
+.logo img {
+   width: clamp(50px, 3vw, 100px);
+   height: clamp(50px, 3vw, 100px);
+}
+
+.logo h1 {
+   font-size: clamp(1rem, 2vw, 2rem);
+   font-weight: bold;
+   color: #000;
+}
+
+nav ul {
+   display: flex;
+   list-style: none;
+   gap: 2rem;
+}
+
+nav ul li {
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+nav ul li a {
+   font-size: clamp(.8rem, 1.2vw, 1.2rem);
+   font-weight: bold;
+   color: #000;
+   text-decoration: none;
+
+}
+
+nav ul li a.active {
+   color: #006eff;
+}
+
+nav ul li:hover {
+   color: #000;
+   transform: translateY(-2px);
+}
+
+.contact {
+   width: 12%
+}
+
+.contact button {
+   padding: 1rem;
+   background-color: #006eff;
+   border: 1px solid #ccc;
+   border-radius: 50px;
+   cursor: pointer;
+   width: 100%;
+   color: #fff;
+   font-size: clamp(.8rem, 1.2vw, 1.2rem);
+   transition: all 0.3s ease;
+}
+
+.contact button:hover {
+   background-color: #000;
+   color: #fff;
+   transform: translateY(-2px);
+}
