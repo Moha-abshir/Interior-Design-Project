@@ -1,0 +1,836 @@
+.hero {
+   height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/hero/hero.jpg');
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 2rem;
+   font-weight: bold;
+   text-align: center;
+}
+
+.hero-content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   text-align: justify;
+   width: 70%;
+   margin: auto;
+}
+
+.hero-content h2 {
+   font-size: clamp(2rem, 4vw, 4rem);
+   font-weight: 400;
+   text-align: center;
+   color: #fff;
+   opacity: 0;
+   animation: fadeUp 0.8s ease-out forwards;
+}
+
+.hero-content p {
+   font-size: clamp(1rem, 1vw, 2rem);
+   color: white;
+   font-weight: 300;
+   text-align: center;
+   opacity: 0;
+   animation: fadeUp 0.8s ease-out 0.3s forwards;
+}
+
+.btn {
+   padding: 1rem 2rem;
+   border-radius: 50px;
+   border: none;
+   background-color: #006eff;
+   color: rgb(255, 255, 255);
+   font-size: 1.2rem;
+   font-weight: bold;
+   cursor: pointer;
+   opacity: 0;
+   animation: fadeUp 0.8s ease-out 0.6s forwards;
+}
+
+.btn:hover {
+   background-color: #000;
+   color: #fff;
+   transform: translateY(-2px);
+}
+
+@keyframes fadeUp {
+   from {
+      opacity: 0;
+      transform: translateY(30px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.arrow {
+   position: absolute;
+   bottom: 2rem;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 2rem;
+   color: white;
+   animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+   0% {
+      transform: translateX(-50%) translateY(0);
+   }
+
+   50% {
+      transform: translateX(-50%) translateY(10px);
+   }
+
+   100% {
+      transform: translateX(-50%) translateY(0);
+   }
+}
+
+/*End of Hero Section.*/
+
+/*Start of Categories Section.*/
+.categories {
+   padding: 4rem 2rem;
+}
+
+.category-intro {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.cat-header {
+   width: 45%;
+   text-align: center;
+   opacity: 0;
+}
+
+.category-intro .cat-header h4 {
+   font-size: clamp(1.2rem, 2.4vw, 2rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+   color: #006eff;
+}
+
+.category-intro .cat-header h3 {
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+.category-intro p {
+   font-size: clamp(1rem, 1vw, 1.2rem);
+   color: #666;
+   width: 50%;
+   text-align: justify;
+   opacity: 0;
+}
+
+.category-intro.animate .cat-header {
+   animation: slideInLeft 1s ease-out forwards;
+}
+
+.category-intro.animate p {
+   animation: slideInRight 1s ease-out forwards;
+}
+
+.category-scroller {
+   overflow: hidden;
+   width: 100%;
+   margin-top: 2rem;
+   /* Mask gradient for smooth edges (optional but nice) */
+   mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+   -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.category-track {
+   display: flex;
+   gap: 2rem;
+   width: max-content;
+   animation: scroll 30s linear infinite;
+}
+
+.category-scroller:hover .category-track {
+   animation-play-state: paused;
+}
+
+.category {
+   text-align: center;
+   flex-shrink: 0;
+   width: 300px;
+}
+
+.category img {
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+.category figcaption {
+   font-size: clamp(0.9rem, 1vw, 1.1rem);
+   margin-top: 0.5rem;
+   font-weight: 500;
+}
+
+@keyframes scroll {
+   from {
+      transform: translateX(0);
+   }
+
+   to {
+      /* Moves exactly 50% because we duplicated the items once */
+      transform: translateX(-50%);
+   }
+}
+
+@keyframes slideInLeft {
+   from {
+      opacity: 0;
+      transform: translateX(-100px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes slideInRight {
+   from {
+      opacity: 0;
+      transform: translateX(100px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+/*End of Categories Section.*/
+
+/*Start of Archievements Section.*/
+.archieve {
+   padding: 4rem 2rem;
+}
+
+.archieve-intro {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.archieve-header {
+   width: 45%;
+   text-align: center;
+   opacity: 0;
+}
+
+.archieve-title {
+   font-size: clamp(1.2rem, 2.4vw, 2rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+   color: #006eff;
+}
+
+.archieve-intro .archieve-header h3 {
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+.archieve-intro p {
+   font-size: clamp(1rem, 1vw, 1.2rem);
+   color: #666;
+   width: 50%;
+   text-align: justify;
+   opacity: 0;
+}
+
+.archieve-intro.animate .archieve-header {
+   animation: slideInLeft 1s ease-out forwards;
+}
+
+.archieve-intro.animate p {
+   animation: slideInRight 1s ease-out forwards;
+}
+
+.archieve-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 2rem;
+   margin-top: 2rem;
+}
+
+.archieve-item {
+   text-align: center;
+   padding: 2rem;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.archieve-item .archieve-number {
+   font-size: clamp(2rem, 4vw, 4rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+   color: #006eff;
+}
+
+.archieve-item .archieve-name {
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+.archieve-item .archieve-description {
+   font-size: clamp(0.9rem, 1vw, 1.1rem);
+   color: #666;
+}
+
+@keyframes slideInLeft {
+   from {
+      opacity: 0;
+      transform: translateX(-100px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes slideInRight {
+   from {
+      opacity: 0;
+      transform: translateX(100px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+/*End of Archievements Section.*/
+/*Start of Portfolio*/
+.Portfolio {
+   padding: 4rem 2rem;
+}
+
+.portfolio-intro {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.portfolio-header {
+   width: 45%;
+   text-align: center;
+   opacity: 0;
+}
+
+.portfolio-intro .portfolio-header h4 {
+   font-size: clamp(1.2rem, 2.4vw, 2rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+   color: #006eff;
+}
+
+.portfolio-intro .portfolio-header h3 {
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+.portfolio-intro p {
+   font-size: clamp(1rem, 1vw, 1.2rem);
+   color: #666;
+   width: 50%;
+   text-align: justify;
+   opacity: 0;
+}
+
+.portfolio-intro.animate .portfolio-header {
+   animation: slideInLeft 1s ease-out forwards;
+}
+
+.portfolio-intro.animate p {
+   animation: slideInRight 1s ease-out forwards;
+}
+
+.masonry-Gallery {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 2rem;
+   margin-top: 2rem;
+}
+
+.masonry-item img {
+   text-align: center;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   height: 400px;
+   width: 100%;
+   object-fit: cover;
+}
+
+.view-more {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   margin-top: 2rem;
+   position: absolute;
+   right: 2rem;
+}
+
+.view-more a {
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+   color: #006eff;
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+
+.view-more a:hover {
+   color: #000000;
+   transform: translateX(5px);
+}
+
+.view-more .svg {
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   color: #006eff;
+   margin-top: -1.3rem;
+   transition: all 0.3s ease;
+}
+
+.view-more svg:hover {
+   color: #000000;
+   transform: translateX(5px);
+}
+
+
+@keyframes slideInLeft {
+   from {
+      opacity: 0;
+      transform: translateX(-100px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes slideInRight {
+   from {
+      opacity: 0;
+      transform: translateX(100px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+/*End of Portfolio*/
+
+/*Start of Methodology*/
+.methodology {
+   padding: 5rem 2rem;
+   background-color: #1B180E;
+   color: #fff;
+   min-height: 80vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.methodology-intro {
+   text-align: center;
+   margin-bottom: 4rem;
+}
+
+.methodology-intro h3 {
+   font-size: clamp(1rem, 1.5vw, 1.2rem);
+   color: #D6A617;
+   margin-bottom: 0.5rem;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.methodology-intro h4 {
+   font-size: clamp(2rem, 4vw, 3rem);
+   color: #fff;
+   font-weight: 400;
+}
+
+.progress-container {
+   position: relative;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 2rem 0;
+}
+
+.progress-track {
+   position: absolute;
+   top: 60px;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background-color: rgba(255, 255, 255, 0.2);
+   z-index: 1;
+}
+
+.progress-fill {
+   height: 100%;
+   background-color: #D6A617;
+   transition: width 0.1s linear;
+   width: 0%;
+}
+
+.steps-container {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   z-index: 2;
+}
+
+.step-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   flex: 1;
+   padding: 0 1rem;
+}
+
+.step-circle {
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   background-color: #1B180E;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2rem;
+   transition: all 0.4s ease;
+}
+
+.step-number {
+   font-size: 1.2rem;
+   color: #D6A617;
+   font-style: italic;
+   font-family: serif;
+   transition: all 0.4s ease;
+}
+
+.step-content h5 {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+   font-weight: 500;
+   color: #fff;
+}
+
+.step-content p {
+   font-size: 0.9rem;
+   color: #999;
+   line-height: 1.6;
+   max-width: 250px;
+   margin: 0 auto;
+}
+
+.step-item.active .step-circle {
+   border-color: #D6A617;
+   background-color: #D6A617;
+}
+
+.step-item.active .step-number {
+   color: #fff;
+}
+
+.book-a-call {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   margin-top: 2rem;
+}
+
+.book-a-call button {
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+   border: 1px solid #D6A617;
+   border-radius: 5px;
+   padding: 1rem;
+   color: #ffffff;
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+
+.book-a-call button:hover {
+   color: #00b7ff;
+}
+
+@media (max-width: 768px) {
+   .steps-container {
+      flex-direction: column;
+      gap: 3rem;
+   }
+
+   .progress-track {
+      width: 1px;
+      height: 100%;
+      left: 40px;
+      top: 0;
+   }
+
+   .progress-fill {
+      width: 100%;
+      height: 0%;
+      transition: height 0.1s linear;
+   }
+
+   .step-item {
+      flex-direction: row;
+      text-align: left;
+      align-items: flex-start;
+      gap: 2rem;
+   }
+
+   .step-content p {
+      margin: 0;
+      max-width: none;
+   }
+}
+
+/*End of Methodology*/
+
+/*Start of Testimonials*/
+.testimonial-intro {
+   text-align: center;
+   margin-bottom: 4rem;
+   margin-top: 4rem;
+}
+
+.testimonial-intro h1 {
+   font-size: clamp(1.2rem, 2.4vw, 2rem);
+   font-weight: bold;
+   color: #006eff;
+   margin-bottom: 0.5rem;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.testimonial-intro p {
+   font-size: clamp(0.9rem, 1.3vw, 1.7rem);
+   font-weight: 00;
+   color: #999;
+   line-height: 1.6;
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+/*End of Testimonials*/
+
+.testimonial-scroller {
+   overflow: hidden;
+   width: 100%;
+   margin-top: 3rem;
+   padding: 1rem 0;
+   /* Mask to fade edges */
+   mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+   -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.testimonial-track {
+   display: flex;
+   gap: 2rem;
+   width: max-content;
+   animation: scroll 40s linear infinite;
+   /* Slower scroll for reading */
+}
+
+.testimonial-scroller:hover .testimonial-track {
+   animation-play-state: paused;
+}
+
+.testimonial-card {
+   background-color: #fff;
+   border-radius: 12px;
+   padding: 2rem;
+   width: 350px;
+   flex-shrink: 0;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   position: relative;
+   border: 1px solid #f0f0f0;
+}
+
+.profile {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+   margin-bottom: 1.5rem;
+}
+
+.profile-img-placeholder {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   background-color: #e0e0e0;
+   /* Placeholder gray */
+   margin-bottom: 0.5rem;
+   background-image: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+}
+
+.profile-info h5 {
+   font-size: 1.1rem;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 0.2rem;
+}
+
+.profile-info span {
+   font-size: 0.9rem;
+   color: #888;
+}
+
+.testimonial-text {
+   font-size: 1rem;
+   color: #555;
+   line-height: 1.6;
+   margin-bottom: 2rem;
+   flex-grow: 1;
+}
+
+.quote-icon {
+   font-size: 2rem;
+   color: #e0e7ff;
+   /* Light indigo/blue tint */
+   margin-top: auto;
+}
+
+/*Start of FAQ*/
+.faq {
+   padding: 6rem 2rem;
+   background-color: #fcfcfc;
+   /* Very light cool gray/white */
+}
+
+.faq-intro {
+   text-align: center;
+   margin-bottom: 4rem;
+}
+
+.faq-intro h3 {
+   font-size: clamp(2rem, 4vw, 3rem);
+   font-weight: 400;
+   /* Elegant, thinner weight like image */
+   margin-bottom: 1rem;
+   color: #333;
+   font-family: serif;
+   /* Optional, for that elegant look */
+}
+
+.faq-intro p {
+   font-size: 1.1rem;
+   color: #888;
+}
+
+.faq-container {
+   max-width: 800px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+.faq-item {
+   background-color: #fff;
+   border-bottom: 1px solid #eee;
+   padding-bottom: 1.5rem;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.faq-question {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.5rem 0;
+}
+
+.faq-question h5 {
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: #333;
+}
+
+.faq-icon {
+   font-size: 1rem;
+   color: #333;
+   transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+   transform: rotate(180deg);
+}
+
+.faq-answer {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height 0.4s ease, opacity 0.4s ease;
+   opacity: 0;
+}
+
+.faq-item.active .faq-answer {
+   max-height: 200px;
+   /* Adjust as needed */
+   opacity: 1;
+   margin-top: 1rem;
+}
+
+.faq-answer p {
+   font-size: 1rem;
+   color: #666;
+   line-height: 1.6;
+}
+
+/*End of FAQ*/

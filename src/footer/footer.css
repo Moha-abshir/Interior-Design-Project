@@ -1,0 +1,152 @@
+.footer-container {
+   background-color: #1B180E;
+   /* Dark theme to match site */
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   margin-top: 4rem;
+}
+
+.footer-content {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 5rem 5%;
+   flex-wrap: wrap;
+   gap: 3rem;
+}
+
+/* Left Brand Column */
+.brand-column {
+   flex: 1;
+   min-width: 300px;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+}
+
+.footer-logo {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   text-decoration: none;
+   color: #fff;
+}
+
+.footer-logo img {
+   width: 50px;
+   height: 50px;
+   object-fit: contain;
+}
+
+.footer-logo span {
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.footer-tagline {
+   color: #a0a0a0;
+   line-height: 1.6;
+   max-width: 400px;
+   font-size: 0.95rem;
+}
+
+.social-media {
+   display: flex;
+   gap: 1.5rem;
+   margin-top: 1rem;
+}
+
+.social-media a {
+   color: #fff;
+   font-size: 1.5rem;
+   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+   color: #D6A617;
+   /* Gold accent */
+   transform: translateY(-3px);
+}
+
+.back-to-top-btn {
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   background: transparent;
+   color: #fff;
+   padding: 0.8rem 1.5rem;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   width: fit-content;
+   margin-top: 1rem;
+   cursor: pointer;
+   text-transform: uppercase;
+   font-size: 0.8rem;
+   letter-spacing: 1px;
+   transition: all 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+   border-color: #D6A617;
+   color: #D6A617;
+}
+
+/* Right Links Section */
+.footer-links-group {
+   display: flex;
+   gap: 4rem;
+   flex-wrap: wrap;
+}
+
+.footer-column h3 {
+   font-size: 1.1rem;
+   font-weight: 600;
+   margin-bottom: 1.5rem;
+   color: #fff;
+}
+
+.footer-column ul {
+   list-style: none;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.footer-column ul li a {
+   color: #a0a0a0;
+   text-decoration: none;
+   font-size: 0.95rem;
+   transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+   color: #D6A617;
+   /* Gold hover */
+}
+
+/* Copyright Bar */
+.copyright-bar {
+   background-color: #D6A617;
+   /* Gold bar */
+   padding: 1rem;
+   text-align: center;
+   color: #1B180E;
+   /* Dark text on gold */
+   font-weight: 500;
+   font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+   .footer-content {
+      flex-direction: column;
+      padding: 3rem 2rem;
+   }
+
+   .footer-links-group {
+      width: 100%;
+      justify-content: space-between;
+   }
+}
