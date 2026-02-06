@@ -1,0 +1,253 @@
+.about-hero {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/about-hero.jpeg');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero-intro {
+   width: 70%;
+   text-align: center;
+}
+
+.hero-intro h2 {
+   font-size: clamp(2rem, 4vw, 4rem);
+   color: #e2d4d4;
+   font-weight: 500;
+   animation: fadeUp 0.8s ease-out forwards;
+}
+
+.hero-intro h2 .highlight {
+   color: #006eff;
+}
+
+.hero-intro p {
+   font-size: clamp(1rem, 1vw, 2rem);
+   color: white;
+   font-weight: 300;
+   text-align: center;
+   opacity: 0;
+   animation: fadeUp 0.8s ease-out 0.3s forwards;
+}
+
+.about-hero .btn1 {
+   padding: 1rem 2rem;
+   border-radius: 50px;
+   border: none;
+   background-color: #006eff;
+   color: rgb(255, 255, 255);
+   font-size: 1.2rem;
+   font-weight: bold;
+   cursor: pointer;
+   opacity: 0;
+   animation: fadeUp 0.8s ease-out 0.6s forwards;
+   transition: all 0.3s ease;
+}
+
+.btn1:hover {
+   background-color: #000;
+   color: #fff;
+   transform: translateY(-2px);
+}
+
+/*End of Hero Section */
+/*Start of About Section */
+.about-section {
+   padding: 4rem 2rem;
+}
+
+.about-intro {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.about-intro h3 {
+   font-size: clamp(1.2rem, 2.4vw, 2rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+   color: #006eff;
+   width: 40%;
+   opacity: 0;
+   transform: translateX(-50px);
+}
+
+.about-intro p {
+   font-size: clamp(1rem, 1vw, 1.2rem);
+   color: #666;
+   width: 50%;
+   text-align: justify;
+   opacity: 0;
+   transform: translateX(50px);
+}
+
+.journey-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 2rem;
+   margin-top: 2rem;
+   opacity: 0;
+   transform: translateY(50px);
+}
+
+.journey-item {
+   text-align: center;
+   padding: 2rem;
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.journey-item .journey-year {
+   font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+   color: #006eff;
+   text-decoration: underline overline;
+}
+
+.journey-item .journey-name {
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+.journey-item .journey-description {
+   font-size: clamp(0.9rem, 1vw, 1.1rem);
+   color: #666;
+   text-align: justify;
+}
+
+
+/*End of About Section */
+
+/* Start of Trust Section */
+.trust-section {
+   position: relative;
+   height: 70vh;
+   min-height: 500px;
+   background-size: cover;
+   background-position: center;
+   transition: background-image 0.5s ease-in-out;
+   display: flex;
+   align-items: flex-end;
+   margin: 2rem 2rem;
+   width: 95%;
+   height: 70vh;
+   border-radius: 10px;
+   opacity: 0;
+   transform: translateY(50px);
+}
+
+.trust-overlay {
+   width: 100%;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+   padding: 3rem 5%;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   color: white;
+   border-radius: 10px;
+}
+
+.trust-content {
+   max-width: 60%;
+}
+
+.trust-content h3 {
+   font-size: clamp(2rem, 3vw, 3rem);
+   margin-bottom: 1rem;
+   font-weight: 600;
+   color: #66a8ff;
+}
+
+.trust-content p {
+   font-size: clamp(1rem, 1.2vw, 1.2rem);
+   line-height: 1.6;
+   opacity: 0.9;
+   color: #fff;
+}
+
+.trust-nav {
+   display: flex;
+   gap: 1rem;
+}
+
+.nav-btn {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   background: rgba(255, 255, 255, 0.1);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   backdrop-filter: blur(5px);
+   transition: all 0.3s ease;
+   font-size: 1.2rem;
+}
+
+.nav-btn:hover {
+   background: white;
+   color: black;
+   border-color: white;
+}
+
+/* Animations */
+.slide-in-left {
+   animation: slideInLeft 1s ease-out forwards;
+}
+
+.slide-in-right {
+   animation: slideInRight 1s ease-out forwards;
+}
+
+.slide-up {
+   animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+   from {
+      opacity: 0;
+      transform: translateX(-50px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes slideInRight {
+   from {
+      opacity: 0;
+      transform: translateX(50px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes slideUp {
+   from {
+      opacity: 0;
+      transform: translateY(50px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}

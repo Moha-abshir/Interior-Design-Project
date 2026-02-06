@@ -1,0 +1,81 @@
+{
+   "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+   },
+   "hero": {
+      "title": "Shaping Spaces with Intention, Creating Experiences That Last",
+      "description": "From concept to completion, we create bespoke interiors that balance beauty and function, shaping spaces that feel as extraordinary as they look.",
+      "explore": "Explore Our Services",
+      "visit": "Visit Our Store"
+   },
+   "categories": {
+      "header": "Categories",
+      "title": "Design Solutions for Every Environment",
+      "description": "We create tailored interior experiences across residential, corporate, and hospitality spaces. Whether designing a private home, a dynamic office, or a welcoming hotel, our approach adapts to the purpose of the space while maintaining elegance, functionality, and timeless appeal.",
+      "residential": "Residential",
+      "commercial": "Commercial",
+      "hotel": "Hotel",
+      "clinics": "Clinics",
+      "restaurant": "Restaurant",
+      "retail": "Retail Design",
+      "school": "School"
+   },
+   "achievements": {
+      "header": "Achievements",
+      "title": "Milestones That Reflect Our Commitment to Design",
+      "description": "Each achievement represents a story of collaboration, creativity, and trust. From successfully delivered projects to industry acknowledgments, our accomplishments showcase the passion and precision we bring to every interior we design.",
+      "completed": "Completed Projects",
+      "completed_desc": "Designing Spaces that inspires and transforms",
+      "experience": "Years of Experience",
+      "experience_desc": "Transforming Spaces with Creativity and Expertise",
+      "clients": "Satisfied Clients",
+      "clients_desc": "Happy clients building lifelong relationships",
+      "success": "Success Rate",
+      "success_desc": "Satisfaction of customers is our utmost priority"
+   },
+   "portfolio": {
+      "header": "Portfolio",
+      "title": "Our Work speaks louder than words",
+      "description": "Each project is a testament to our commitment to excellence and our ability to transform spaces into environments that inspire, comfort, and reflect the unique essence of each client's vision.",
+      "view_more": "View More"
+   },
+   "methodology": {
+      "header": "Methodology",
+      "title": "A Seamless Journey",
+      "steps": {
+         "consultation": "Consultation",
+         "consultation_desc": "Defining your vision, functional needs, and the project’s unique architectural soul.",
+         "concept": "Concept",
+         "concept_desc": "Curating moodboards, custom sketches, and a preliminary palette of materials.",
+         "execution": "Execution",
+         "execution_desc": "Full-scale management of procurement, artisans, and construction oversight.",
+         "reveal": "Reveal",
+         "reveal_desc": "The final installation and curated styling of your new bespoke environment."
+      },
+      "book_call": "Book a Call"
+   },
+   "testimonials": {
+      "header": "Our Trusted Clients",
+      "description": "Hear directly from those who have experienced the transformation of their spaces with us."
+   },
+   "faq": {
+      "header": "Frequently Asked",
+      "description": "Transparent answers to help you begin your design journey.",
+      "q1": "How long does a typical project take?",
+      "a1": "Full-service projects typically range from 6 to 18 months depending on the architectural scope and construction requirements. Consultation-only projects can often be completed in 4 to 6 weeks.",
+      "q2": "Do you work on international projects?",
+      "a2": "Yes, we work with clients globally. Our team is experienced in remote design processes and can coordinate with local contractors and artisans to ensure the vision is executed perfectly.",
+      "q3": "What is your design fee structure?",
+      "a3": "We offer a transparent fee structure based on the scope of work. This can be a flat design fee for standard packages or an hourly rate for consultation services. We provide a detailed proposal after the initial consultation.",
+      "q4": "Can you incorporate my existing furniture?",
+      "a4": "Absolutely. We believe in curated spaces that tell your story. We will happily integrate your cherished pieces into the new design plan, ensuring they blend seamlessly with the modern updates.",
+      "q5": "Do you handle procurement and installation?",
+      "a5": "Yes, we manage the entire process. From sourcing furniture and materials to coordinating deliveries and final installation, we ensure a stress-free experience for our clients.",
+      "q6": "What is included in the initial consultation?",
+      "a6": "The initial consultation is a discovery session where we discuss your needs, budget, and style preferences. We also walk through the space (virtually or in-person) to understand its potential and limitations."
+   }
+}

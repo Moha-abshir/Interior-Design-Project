@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './HomePage.css'
 import bedroom from '../assets/categories/Three-bedroom.jpg'
 import office from '../assets/categories/office-design.jpg'
@@ -46,6 +47,7 @@ const Counter = ({ target, duration = 2000, start }) => {
 };
 
 export default function HomePage() {
+    const { t } = useTranslation();
     const [isVisible, setIsVisible] = useState(false);
     const [isArchieveVisible, setIsArchieveVisible] = useState(false);
     const [isPortfolioVisible, setIsPortfolioVisible] = useState(false);
@@ -89,37 +91,37 @@ export default function HomePage() {
     const categories = [
         {
             id: 1,
-            title: 'Residential',
+            title: t('categories.residential'),
             image: bedroom,
         },
         {
             id: 2,
-            title: 'Commercial',
+            title: t('categories.commercial'),
             image: office
         },
         {
             id: 3,
-            title: 'Hotel',
+            title: t('categories.hotel'),
             image: hotel,
         },
         {
             id: 4,
-            title: 'Clinics',
+            title: t('categories.clinics'),
             image: clinics,
         },
         {
             id: 5,
-            title: 'Restaurant',
+            title: t('categories.restaurant'),
             image: restaurant,
         },
         {
             id: 6,
-            title: 'Retail Design',
+            title: t('categories.retail'),
             image: retailDesign,
         },
         {
             id: 7,
-            title: 'School',
+            title: t('categories.school'),
             image: school,
         },
     ];
@@ -127,52 +129,52 @@ export default function HomePage() {
         {
             id: 1,
             numbers: '80+',
-            name: 'Completed Projects',
-            description: 'Designing Spaces that inspires and transforms'
+            name: t('achievements.completed'),
+            description: t('achievements.completed_desc')
         },
         {
             id: 2,
             numbers: '15+',
-            name: 'Years of Experience',
-            description: 'Transforming Spaces with Creativity and Expertise'
+            name: t('achievements.experience'),
+            description: t('achievements.experience_desc')
         },
         {
             id: 3,
             numbers: '100+',
-            name: 'Satisfied Clients',
-            description: 'Happy clients building lifelong relationships'
+            name: t('achievements.clients'),
+            description: t('achievements.clients_desc')
         },
         {
             id: 4,
             numbers: '99%',
-            name: 'Success Rate',
-            description: 'Satisfaction of customers is our utmost priority'
+            name: t('achievements.success'),
+            description: t('achievements.success_desc')
         }
     ]
     const methodology = [
         {
             id: 1,
             step: '01',
-            title: 'Consultation',
-            description: 'Defining your vision, functional needs, and the project’s unique architectural soul.'
+            title: t('methodology.steps.consultation'),
+            description: t('methodology.steps.consultation_desc')
         },
         {
             id: 2,
             step: '02',
-            title: 'Concept',
-            description: 'Curating moodboards, custom sketches, and a preliminary palette of materials.'
+            title: t('methodology.steps.concept'),
+            description: t('methodology.steps.concept_desc')
         },
         {
             id: 3,
             step: '03',
-            title: 'Execution',
-            description: 'Full-scale management of procurement, artisans, and construction oversight.'
+            title: t('methodology.steps.execution'),
+            description: t('methodology.steps.execution_desc')
         },
         {
             id: 4,
             step: '04',
-            title: 'Reveal',
-            description: 'The final installation and curated styling of your new bespoke environment.'
+            title: t('methodology.steps.reveal'),
+            description: t('methodology.steps.reveal_desc')
         },
     ];
     
@@ -252,33 +254,33 @@ export default function HomePage() {
     const faqs = [
         {
             id: 1,
-            question: "How long does a typical project take?",
-            answer: "Full-service projects typically range from 6 to 18 months depending on the architectural scope and construction requirements. Consultation-only projects can often be completed in 4 to 6 weeks."
+            question: t('faq.q1'),
+            answer: t('faq.a1')
         },
         {
             id: 2,
-            question: "Do you work on international projects?",
-            answer: "Yes, we work with clients globally. Our team is experienced in remote design processes and can coordinate with local contractors and artisans to ensure the vision is executed perfectly."
+            question: t('faq.q2'),
+            answer: t('faq.a2')
         },
         {
             id: 3,
-            question: "What is your design fee structure?",
-            answer: "We offer a transparent fee structure based on the scope of work. This can be a flat design fee for standard packages or an hourly rate for consultation services. We provide a detailed proposal after the initial consultation."
+            question: t('faq.q3'),
+            answer: t('faq.a3')
         },
         {
             id: 4,
-            question: "Can you incorporate my existing furniture?",
-            answer: "Absolutely. We believe in curated spaces that tell your story. We will happily integrate your cherished pieces into the new design plan, ensuring they blend seamlessly with the modern updates."
+            question: t('faq.q4'),
+            answer: t('faq.a4')
         },
         {
             id: 5,
-            question: "Do you handle procurement and installation?",
-            answer: "Yes, we manage the entire process. From sourcing furniture and materials to coordinating deliveries and final installation, we ensure a stress-free experience for our clients."
+            question: t('faq.q5'),
+            answer: t('faq.a5')
         },
         {
             id: 6,
-            question: "What is included in the initial consultation?",
-            answer: "The initial consultation is a discovery session where we discuss your needs, budget, and style preferences. We also walk through the space (virtually or in-person) to understand its potential and limitations."
+            question: t('faq.q6'),
+            answer: t('faq.a6')
         }
     ];
 
@@ -337,11 +339,11 @@ export default function HomePage() {
             {/*Start of Hero Section.*/}
             <section className='hero' id='hero'>
                 <div className='hero-content'>
-                    <h2>Shaping Spaces with Intention, Creating Experiences That Last</h2>
-                    <p>From concept to completion, we create bespoke interiors that balance beauty and function, shaping spaces that feel as extraordinary as they look.</p>
+                    <h2>{t('hero.title')}</h2>
+                    <p>{t('hero.description')}</p>
                     <div className="button-holder">
-                        <button className='btn'>Explore Our Services</button>
-                        <button className='btn-visit-store'>Visit Our Store</button>
+                        <button className='btn'>{t('hero.explore')}</button>
+                        <button className='btn-visit-store'>{t('hero.visit')}</button>
                     </div>
                 </div>
                 <div className='arrow'><FaArrowDownLong /></div>
@@ -351,10 +353,10 @@ export default function HomePage() {
             <section className="categories" ref={categoryRef}>
                 <div className={`category-intro ${isVisible ? 'animate' : ''}`}>
                     <div className='cat-header'>
-                        <h4>Categories</h4>
-                        <h3>Design Solutions for Every Environment</h3>
+                        <h4>{t('categories.header')}</h4>
+                        <h3>{t('categories.title')}</h3>
                     </div>
-                    <p>We create tailored interior experiences across residential, corporate, and hospitality spaces. Whether designing a private home, a dynamic office, or a welcoming hotel, our approach adapts to the purpose of the space while maintaining elegance, functionality, and timeless appeal.</p>
+                    <p>{t('categories.description')}</p>
                 </div> 
                 <div className="category-scroller">
                     <div className="category-grid category-track">
@@ -380,10 +382,10 @@ export default function HomePage() {
             <section className="archieve" ref={archieveRef}>
                 <div className={`archieve-intro ${isArchieveVisible ? 'animate' : ''}`}>
                     <div className='archieve-header'>
-                        <h4 className='archieve-title'>Archievements</h4>
-                        <h3>Milestones That Reflect Our Commitment to Design</h3>
+                        <h4 className='archieve-title'>{t('achievements.header')}</h4>
+                        <h3>{t('achievements.title')}</h3>
                     </div>
-                    <p>Each achievement represents a story of collaboration, creativity, and trust. From successfully delivered projects to industry acknowledgments, our accomplishments showcase the passion and precision we bring to every interior we design.</p>
+                    <p>{t('achievements.description')}</p>
                 </div>
                 <div className="archieve-grid">
                     {archieve.map((item) => (
@@ -403,10 +405,10 @@ export default function HomePage() {
                 <div className="portfolio-about">
                     <div className={`portfolio-intro ${isPortfolioVisible ? 'animate' : ''}`}>
                         <div className="portfolio-header">
-                            <h4>Portfolio</h4>
-                            <h3>Our Work speaks louder than words</h3>
+                            <h4>{t('portfolio.header')}</h4>
+                            <h3>{t('portfolio.title')}</h3>
                         </div>
-                        <p>Each project is a testament to our commitment to excellence and our ability to transform spaces into environments that inspire, comfort, and reflect the unique essence of each client's vision.</p>
+                        <p>{t('portfolio.description')}</p>
                     </div>
                     <div className="masonry-Gallery">
                         <div className="masonry-item">
@@ -423,7 +425,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="view-more">
-                        <Link to="/portfolio">View More</Link>
+                        <Link to="/portfolio">{t('portfolio.view_more')}</Link>
                         <FaArrowRightLong className="svg"/>
                     </div>
                 </div>
@@ -432,8 +434,8 @@ export default function HomePage() {
             {/*Start of Methodology */}
             <section className="methodology" ref={methodologyRef}>
                 <div className="methodology-intro">
-                    <h3>Methodology</h3>
-                    <h4>A Seamless Journey</h4>
+                    <h3>{t('methodology.header')}</h3>
+                    <h4>{t('methodology.title')}</h4>
                 </div>
                 <div className="progress-container">
                     <div className="progress-track">
@@ -466,7 +468,7 @@ export default function HomePage() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <button>Book a Call</button>
+                            <button>{t('methodology.book_call')}</button>
                         </a>
                 </div>
             </section>
@@ -474,8 +476,8 @@ export default function HomePage() {
             {/*Start of Testimonials */}
             <section className="testimonials">
                 <div className="testimonial-intro">
-                    <h1>Our Trusted Clients</h1>
-                    <p>Hear directly from those who have experienced the transformation of their spaces with us.</p>
+                    <h1>{t('testimonials.header')}</h1>
+                    <p>{t('testimonials.description')}</p>
                 </div>
                 <div className="testimonial-scroller">
                     <div className="testimonial-track">
@@ -514,8 +516,8 @@ export default function HomePage() {
             {/*Start of FAQ */}
             <section className="faq">
                 <div className="faq-intro">
-                    <h3>Frequently Asked</h3>
-                    <p>Transparent answers to help you begin your design journey.</p>
+                    <h3>{t('faq.header')}</h3>
+                    <p>{t('faq.description')}</p>
                 </div>
                 <div className="faq-container">
                     {faqs.map((faq) => (

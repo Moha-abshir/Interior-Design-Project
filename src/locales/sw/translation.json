@@ -1,0 +1,100 @@
+{
+   "nav": {
+      "home": "Nyumbani",
+      "about": "Kuhusu Sisi",
+      "services": "Huduma",
+      "portfolio": "Kazi Zetu",
+      "contact": "Wasiliana Nasi"
+   },
+   "hero": {
+      "title": "Kuunda Nafasi kwa Kusudi, Kutengeneza Uzoefu wa Kudumu",
+      "description": "Kuanzia dhana hadi kukamilika, tunaunda mambo ya ndani yaliyobinafsishwa ambayo yanasawazisha uzuri na kazi, kuunda nafasi ambazo zinahisi kuwa za kipekee jinsi zinavyoonekana.",
+      "explore": "Gundua Huduma Zetu",
+      "visit": "Tembelea Duka Letu"
+   },
+   "footer": {
+      "tagline": "Kuwezesha wateja na mambo ya ndani ya maono ambayo yanachanganya roho ya usanifu na utendaji wa kisasa.",
+      "back_to_top": "Rudi Juu",
+      "sitemap": "Ramani ya Tovuti",
+      "links": {
+         "home": "Nyumbani",
+         "about": "Kuhusu Sisi",
+         "services": "Huduma",
+         "portfolio": "Kazi Zetu",
+         "contact": "Wasiliana Nasi"
+      },
+      "legal": "Kisheria",
+      "legal_links": {
+         "privacy": "Sera ya Faragha",
+         "terms": "Masharti ya Huduma",
+         "notice": "Ilani ya Kisheria"
+      },
+      "copyright": "Hakimiliki © {{year}}, Mwama Graziers. Haki Zote Zimehifadhiwa."
+   },
+   "categories": {
+      "header": "Aina",
+      "title": "Suluhisho za Ubunifu kwa Kila Mazingira",
+      "description": "Tunaunda uzoefu wa ndani uliolengwa katika nafasi za makazi, ushirika, na ukarimu. Ikiwa ni kubuni nyumba ya kibinafsi, ofisi yenye nguvu, au hoteli ya kukaribisha, mbinu yetu inabadilika kulingana na madhumuni ya nafasi huku ikidumisha umaridadi, utendakazi, na mvuto wa kudumu.",
+      "residential": "Makazi",
+      "commercial": "Biashara",
+      "hotel": "Hoteli",
+      "clinics": "Kliniki",
+      "restaurant": "Mgahawa",
+      "retail": "Ubunifu wa Rejareja",
+      "school": "Shule"
+   },
+   "achievements": {
+      "header": "Mafanikio",
+      "title": "Hatua Zinazoonyesha Ahadi Yetu",
+      "description": "Kila mafanikio yanawakilisha hadithi ya ushirikiano, ubunifu, na uaminifu. Kutoka kwa miradi iliyokabidhiwa kwa mafanikio hadi utambuzi wa tasnia, mafanikio yetu yanaonyesha shauku na usahihi tunaoleta kwa kila mambo ya ndani tunayobuni.",
+      "completed": "Miradi Iliyokamilika",
+      "completed_desc": "Kubuni Nafasi zinazohimiza na kubadilisha",
+      "experience": "Miaka ya Uzoefu",
+      "experience_desc": "Kubadilisha Nafasi kwa Ubunifu na Utaalam",
+      "clients": "Wateja Walioridhika",
+      "clients_desc": "Wateja wenye furaha wanaojenga uhusiano wa kudumu",
+      "success": "Kiwango cha Mafanikio",
+      "success_desc": "Kuridhika kwa wateja ni kipaumbele chetu kikuu"
+   },
+   "portfolio": {
+      "header": "Kazi Zetu",
+      "title": "Kazi Yetu inajieleza zaidi ya maneno",
+      "description": "Kila mradi ni ushuhuda wa kujitolea kwetu kwa ubora na uwezo wetu wa kubadilisha nafasi kuwa mazingira ambayo yanahimiza, kufariji, na kutafakari kiini cha kipekee cha maono ya kila mteja.",
+      "view_more": "Tazama Zaidi"
+   },
+   "methodology": {
+      "header": "Mbinu",
+      "title": "Safari Isiyo na Vikwazo",
+      "steps": {
+         "consultation": "Mashauriano",
+         "consultation_desc": "Kufafanua maono yako, mahitaji ya kiutendaji, na nafsi ya kipekee ya usanifu wa mradi.",
+         "concept": "Dhana",
+         "concept_desc": "Kuratibu mbao za hisia, michoro maalum, na palette ya awali ya vifaa.",
+         "execution": "Utekelezaji",
+         "execution_desc": "Usimamizi kamili wa ununuzi, mafundi, na usimamizi wa ujenzi.",
+         "reveal": "Ufunuo",
+         "reveal_desc": "Ufungaji wa mwisho na mtindo ulioratibiwa wa mazingira yako mapya yaliyobinafsishwa."
+      },
+      "book_call": "Weka Miadi ya Simu"
+   },
+   "testimonials": {
+      "header": "Wateja Wetu Wanaotuamini",
+      "description": "Sikia moja kwa moja kutoka kwa wale ambao wamepitia mabadiliko ya nafasi zao nasi."
+   },
+   "faq": {
+      "header": "Maswali Yanayoulizwa Mara kwa Mara",
+      "description": "Majibu ya wazi kukusaidia kuanza safari yako ya ubunifu.",
+      "q1": "Mradi wa kawaida huchukua muda gani?",
+      "a1": "Miradi ya huduma kamili kwa kawaida huchukua miezi 6 hadi 18 kulingana na upeo wa usanifu na mahitaji ya ujenzi. Miradi ya mashauriano pekee mara nyingi inaweza kukamilika kwa wiki 4 hadi 6.",
+      "q2": "Je, mnafanya kazi kwenye miradi ya kimataifa?",
+      "a2": "Ndio, tunafanya kazi na wateja ulimwenguni kote. Timu yetu ina uzoefu katika michakato ya ubunifu wa mbali na inaweza kuratibu na wakandarasi wa ndani na mafundi ili kuhakikisha maono yanatekelezwa kikamilifu.",
+      "q3": "Muundo wenu wa ada ya ubunifu ukoje?",
+      "a3": "Tunatoa muundo wa ada ulio wazi kulingana na upeo wa kazi. Hii inaweza kuwa ada ya ubunifu ya gorofa kwa vifurushi vya kawaida au kiwango cha saa kwa huduma za mashauriano. Tunatoa pendekezo la kina baada ya mashauriano ya awali.",
+      "q4": "Je, mnaweza kujumuisha samani zangu zilizopo?",
+      "a4": "Kabisa. Tunaamini katika nafasi zilizoratibiwa zinazoelezea hadithi yako. Tutafurahi kuunganisha vipande vyako unavyovipenda katika mpango mpya wa ubunifu, kuhakikisha vinachanganyika vizuri na sasisho za kisasa.",
+      "q5": "Je, mnashughulikia ununuzi na ufungaji?",
+      "a5": "Ndio, tunasimamia mchakato mzima. Kutoka kwa kutafuta samani na vifaa hadi kuratibu uwasilishaji na ufungaji wa mwisho, tunahakikisha uzoefu usio na mkazo kwa wateja wetu.",
+      "q6": "Ni nini kinachojumuishwa katika mashauriano ya awali?",
+      "a6": "Mashauriano ya awali ni kikao cha ugunduzi ambapo tunajadili mahitaji yako, bajeti, na mapendeleo ya mtindo. Pia tunatembea kupitia nafasi (kwa njia ya mtandao au ana kwa ana) kuelewa uwezo wake na mapungufu."
+   }
+}

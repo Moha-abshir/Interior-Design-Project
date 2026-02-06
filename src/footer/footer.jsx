@@ -1,9 +1,12 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaChevronUp } from "react-icons/fa6";
+import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png'
 import { NavLink } from "react-router-dom";
 import './footer.css'
 
 export default function Footer() {
+    const { t } = useTranslation();
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -20,7 +23,7 @@ export default function Footer() {
                         <span>Mwama Graziers</span>
                     </NavLink>
                     <p className="footer-tagline">
-                        Empowering clients with visionary interiors that blend architectural soul with modern functionality.
+                        {t('footer.tagline')}
                     </p>
                     <div className="social-media">
                         <a href="#"><FaFacebook /></a>
@@ -29,34 +32,34 @@ export default function Footer() {
                         <a href="#"><FaLinkedin /></a>
                     </div>
                     <button className="back-to-top-btn" onClick={scrollToTop}>
-                        <FaChevronUp /> Back to Top
+                        <FaChevronUp /> {t('footer.back_to_top')}
                     </button>
                 </div>
 
                 <div className="footer-links-group">
                     <div className="footer-column">
-                        <h3>Site Map</h3>
+                        <h3>{t('footer.sitemap')}</h3>
                         <ul>
-                            <li><NavLink to="/">Homepage</NavLink></li>
-                            <li><NavLink to="/about">About</NavLink></li>
-                            <li><NavLink to="/services">Services</NavLink></li>
-                            <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-                            <li><NavLink to="/contact">Contact Us</NavLink></li>
+                            <li><NavLink to="/">{t('footer.links.home')}</NavLink></li>
+                            <li><NavLink to="/about">{t('footer.links.about')}</NavLink></li>
+                            <li><NavLink to="/services">{t('footer.links.services')}</NavLink></li>
+                            <li><NavLink to="/portfolio">{t('footer.links.portfolio')}</NavLink></li>
+                            <li><NavLink to="/contact">{t('footer.links.contact')}</NavLink></li>
                         </ul>
                     </div>
                     <div className="footer-column">
-                        <h3>Legal</h3>
+                        <h3>{t('footer.legal')}</h3>
                         <ul>
-                            <li><NavLink to="/privacy">Privacy Policy</NavLink></li>
-                            <li><NavLink to="/terms">Terms of Services</NavLink></li>
-                            <li><NavLink to="/legal">Legal Notice</NavLink></li>
+                            <li><NavLink to="/privacy">{t('footer.legal_links.privacy')}</NavLink></li>
+                            <li><NavLink to="/terms">{t('footer.legal_links.terms')}</NavLink></li>
+                            <li><NavLink to="/legal">{t('footer.legal_links.notice')}</NavLink></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <div className="copyright-bar">
-                <p>Copyright © {new Date().getFullYear()}, Mwama Graziers. All Rights Reserved.</p>
+                <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
             </div>
         </footer>
     );
