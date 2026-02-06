@@ -339,7 +339,10 @@ export default function HomePage() {
                 <div className='hero-content'>
                     <h2>Shaping Spaces with Intention, Creating Experiences That Last</h2>
                     <p>From concept to completion, we create bespoke interiors that balance beauty and function, shaping spaces that feel as extraordinary as they look.</p>
-                    <button className='btn'>Explore Our Services</button>
+                    <div className="button-holder">
+                        <button className='btn'>Explore Our Services</button>
+                        <button className='btn-visit-store'>Visit Our Store</button>
+                    </div>
                 </div>
                 <div className='arrow'><FaArrowDownLong /></div>
             </section>

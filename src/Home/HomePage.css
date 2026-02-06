@@ -42,6 +42,11 @@
    animation: fadeUp 0.8s ease-out 0.3s forwards;
 }
 
+.button-holder {
+   display: flex;
+   gap: 1rem;
+}
+
 .btn {
    padding: 1rem 2rem;
    border-radius: 50px;
@@ -55,8 +60,28 @@
    animation: fadeUp 0.8s ease-out 0.6s forwards;
 }
 
+.btn-visit-store {
+   padding: 1rem 2rem;
+   border-radius: 50px;
+   border: 1px solid #006eff;
+   background-color: transparent;
+   color: rgb(255, 255, 255);
+   font-size: 1.2rem;
+   font-weight: bold;
+   cursor: pointer;
+   opacity: 0;
+   animation: fadeUp 0.8s ease-out 0.6s forwards;
+   transition: all 0.3s ease;
+}
+
 .btn:hover {
    background-color: #000;
+   color: #fff;
+   transform: translateY(-2px);
+}
+
+.btn-visit-store:hover {
+   background-color: #006eff;
    color: #fff;
    transform: translateY(-2px);
 }
