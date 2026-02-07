@@ -31,6 +31,80 @@
       },
       "copyright": "Hakimiliki © {{year}}, Mwama Graziers. Haki Zote Zimehifadhiwa."
    },
+   "about": {
+      "hero": {
+         "title": "Kubuni Zaidi ya Urembo, Kujenga <1>Hisia</1> za Kudumu",
+         "description": "Kila mradi unaundwa na ubunifu, usahihi, na ushirikiano. Hatubuni tu nafasi — tunaratibu uzoefu unaoonyesha utu na kuinua maisha ya kila siku.",
+         "cta": "Panga Mashauriano"
+      },
+      "intro": {
+         "title": "Jinsi Safari Yetu ya Ubunifu wa Ndani Ilivyokaanza",
+         "description": "Kutoka mwanzo mnyenyekevu hadi kuwa jina linalotambulika katika ubunifu wa mambo ya ndani, safari yetu ni ushahidi wa shauku, uvumilivu, na harakati zisizo na kuchoka za ubora."
+      },
+      "journey": {
+         "foundation": {
+            "title": "Msingi",
+            "description": "Kila safari huanza na kusudi. Katika miaka hii ya mapema, maono yalichongwa, ujuzi uliboreshwa, na shauku ya kubadilisha nafasi ilianza kuchukua sura. Kilichoanza kama utafutaji wa ubunifu kilibadilika haraka kuwa ubunifu wenye kusudi unaoongozwa na maelezo na kujitolea."
+         },
+         "momentum": {
+            "title": "Kujenga Kasi",
+            "description": "Kwa ujasiri na uzoefu unaokua, miradi ilipanuka kwa kiwango na utata. Kila nafasi iliyokamilika iliimarisha sifa yetu ya usahihi, ubunifu, na ubunifu unaolenga mteja. Kipindi hiki kilitia alama mabadiliko kutoka kwa ahadi hadi ubora uliothibitishwa."
+         },
+         "craft": {
+            "title": "Kuboresha Ufundi",
+            "description": "Uvumbuzi ulikutana na ukomavu. Falsafa ya ubunifu ikawa wazi zaidi, michakato ikapangwa zaidi, na ushirikiano ukawa wa maana zaidi. Miaka hii ilifafanuliwa na dhana za ujasiri, utekelezaji ulioinuliwa, na mambo ya ndani yaliyochanganya utendaji na umaridadi wa kipekee."
+         },
+         "vision": {
+            "title": "Kuinua Maono",
+            "description": "Leo, studio inasimama kama nguvu ya ubunifu iliyosafishwa. Pamoja na kwingineko inayokua na ahadi isiyoyumba ya ubora, tunaendelea kubuni mazingira yanayoonyesha ushupavu, kusudi, na mvuto wa kudumu — daima tukisukuma mipaka huku tukiheshimu maadili yetu ya kimsingi."
+         }
+      },
+      "trust": {
+         "mission": {
+            "title": "Dhamira Yetu",
+            "message": "Tunajitahidi kutoa huduma za kitaalamu, za uhakika na rahisi za usaidizi wa mtandaoni zinazoongeza ufanisi na tija."
+         },
+         "vision": {
+            "title": "Maono Yetu",
+            "message": "Kuwa mtoa huduma anayeongoza wa suluhisho za kiubunifu za mambo ya ndani, kubadilisha nafasi za kawaida kuwa uzoefu wa ajabu kupitia ubunifu na kujitolea."
+         },
+         "motive": {
+            "title": "Nia Yetu",
+            "message": "Tukiongozwa na hamu ya kuunda maelewano na uzuri, tunaamini kuwa ubunifu haupaswi kuonekana mzuri tu bali pia kujisikia vizuri, ukiboresha ubora wa maisha kwa kila mtu."
+         },
+         "inspiration": {
+            "title": "Msukumo Wetu",
+            "message": "Asili, sanaa, na hadithi za kipekee za wateja wetu zinahimiza kila mradi. Tunapata uzuri katika maelezo na kuyatafsiri kuwa miundo isiyo na wakati."
+         }
+      },
+      "team": {
+         "title": "Kutana na Timu Yetu",
+         "description": "Timu yetu ni mchanganyiko wa ubunifu, utaalam, na shauku ya pamoja ya ubunifu wa mambo ya ndani. Kila mwanachama huleta ujuzi na mitazamo ya kipekee kwa kila mradi, kuhakikisha kuwa kila nafasi haibuniwi tu bali inabadilishwa kuwa onyesho la tabia yake ya kipekee."
+      },
+      "why_choose_us": {
+         "pill": "KWA NINI UTUCHAGUE",
+         "title": "Kwa Nini <1>Mwama Graziers</1> Ni Chaguo Sahihi Kwako",
+         "cards": {
+            "visionary": {
+               "title": "Ubunifu wa Maono",
+               "description": "Wabunifu wetu wataalam wanachanganya esthetiki na utendaji kuunda nafasi ambazo si nzuri tu, bali zinaweza kuishi kikweli."
+            },
+            "sustainable": {
+               "title": "Suluhisho Endelevu",
+               "description": "Tunatoa kipaumbele kwa vifaa rafiki kwa mazingira na miundo inayotumia nishati vizuri, kuhakikisha nafasi yako ni rafiki kwa sayari kama ilivyo kwako."
+            },
+            "client_centric": {
+               "title": "Falsafa Inayolenga Mteja",
+               "description": "Maono yako ni ramani yetu. Tunatoa kipaumbele kwa mawasiliano ya wazi na huduma iliyobinafsishwa kuhakikisha nafasi yako inaonyesha mtindo wako wa kipekee. Iwe ni makazi au biashara, tunabadilisha kila undani kwako.",
+               "cta": "Anza Mradi Wako"
+            },
+            "comprehensive": {
+               "title": "Huduma Kamili",
+               "description": "Kuanzia dhana ya awali hadi ufungaji wa mwisho, tunashughulikia kila kipengele cha mradi. Huduma yetu ya mwisho hadi mwisho ni pamoja na ununuzi, uratibu wa wakandarasi, na mtindo, kuhakikisha uzoefu usio na mshono na usio na mkazo."
+            }
+         }
+      }
+   },
    "categories": {
       "header": "Aina",
       "title": "Suluhisho za Ubunifu kwa Kila Mazingira",

@@ -18,6 +18,8 @@ i18n
          }
       },
       fallbackLng: 'en',
+      supportedLngs: ['en', 'sw'],
+      load: 'languageOnly', // Consolidate en-US, en-GB etc. to en
       interpolation: {
          escapeValue: false
       }
