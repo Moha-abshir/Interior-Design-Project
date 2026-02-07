@@ -170,5 +170,75 @@
       "a5": "Ndio, tunasimamia mchakato mzima. Kutoka kwa kutafuta samani na vifaa hadi kuratibu uwasilishaji na ufungaji wa mwisho, tunahakikisha uzoefu usio na mkazo kwa wateja wetu.",
       "q6": "Ni nini kinachojumuishwa katika mashauriano ya awali?",
       "a6": "Mashauriano ya awali ni kikao cha ugunduzi ambapo tunajadili mahitaji yako, bajeti, na mapendeleo ya mtindo. Pia tunatembea kupitia nafasi (kwa njia ya mtandao au ana kwa ana) kuelewa uwezo wake na mapungufu."
+   },
+   "services_page": {
+      "hero": {
+         "breadcrumb": "Nyumbani / Huduma",
+         "title": "Huduma za <1>Usanifu</1> Zinazoinua <br /> Kila Nafasi",
+         "description": "Iwe unaunda makazi ya kibinafsi, ofisi ya kisasa, au mazingira ya ukarimu, huduma zetu zilizolengwa zinahakikisha kila nafasi inaonyesha maono yako.",
+         "cta": "Anza Sasa",
+         "satisfied_customers": "Wateja <br /> Walioridhika"
+      },
+      "header": {
+         "title": "<1>Huduma Zetu.</1> Suluhisho Kamili za Usanifu, Zote mahali pamoja",
+         "description": "Tunatoa suluhisho kamili za ubunifu wa mambo ya ndani, tukiongoza mradi wako kwa urahisi kutoka dhana hadi kukamilika huku tukihakikisha kila undani unaonyesha ubora, kusudi, na mvuto usio na wakati."
+      },
+      "services": {
+         "glass_solutions": {
+            "title": "Suluhisho za Kioo cha Usanifu",
+            "description": "Tunatoa suluhisho za kioo cha usanifu wa hali ya juu iliyoundwa kwa uimara, usalama, na aesthetics ya kisasa. Mifumo yetu huongeza mwanga wa asili, ufanisi wa nishati, na umaridadi wa kimuundo katika majengo ya makazi na biashara."
+         },
+         "frameless_glass": {
+            "title": "Mifumo ya Kioo isiyo na Fremu",
+            "description": "Ufungaji wetu wa kioo usio na fremu hutoa kumaliza laini, kwa kisasa wakati wa kudumisha uadilifu wa kimuundo na usalama, bora kwa ofisi za kisasa na mambo ya ndani ya biashara."
+         },
+         "office_partitions": {
+            "title": "Mifumo ya Kugawanya Ofisi",
+            "description": "Tunabuni na kusanikisha mifumo ya kugawa ofisi inayofanya kazi ambayo inaboresha nafasi, kuboresha faragha, na kudumisha muonekano wa kitaalam, na wa kisasa."
+         },
+         "aluminium_fabrication": {
+            "title": "Uundaji na Ufungaji wa Alumini",
+            "description": "Huduma zetu za uundaji wa alumini ni pamoja na mifumo sahihi ya kimuundo na mapambo iliyoundwa kwa mahitaji ya mradi, kuhakikisha uimara na kumaliza iliyosafishwa."
+         },
+         "curtain_wall": {
+            "title": "Huduma za Ufungaji wa Ukuta wa Pazia",
+            "description": "Tunatoa mifumo ya ukuta wa pazia iliyoundwa kitaalam ambayo hutoa utendaji wa kimuundo, upinzani wa hali ya hewa, na rufaa ya kisasa ya usanifu."
+         },
+         "pvc_plumbing": {
+            "title": "Vifaa vya PVC na Suluhisho za Mabomba",
+            "description": "Tunatoa vifaa vya kuaminika, vya utendaji wa juu wa PVC iliyoundwa kwa bomba bora na mifumo ya mifereji ya maji, kuhakikisha uimara na utendaji wa muda mrefu."
+         },
+         "shower_cubicle": {
+            "title": "Ugavi na Ufungaji wa Bafu za Kuoga",
+            "description": "Mifumo yetu ya bafu za kuoga inachanganya muundo wa kisasa na vifaa vya kudumu, kutoa suluhisho nzuri na za kazi za bafuni na ufungaji wa kitaalam."
+         },
+         "alucol_cladding": {
+            "title": "Mifumo ya Alucol Cladding & Panel",
+            "description": "Tunatoa suluhisho za paneli za Alucol ambazo huongeza nje ya jengo na nguvu, insulation, na muundo wa kisasa wa usanifu."
+         },
+         "commercial_systems": {
+            "title": "Mifumo ya Kioo na Alumini ya Biashara",
+            "description": "Tunatoa suluhisho jumuishi za kioo na alumini iliyoundwa kwa maendeleo ya kibiashara, kuhakikisha kuegemea, aesthetics ya kisasa, na kufuata viwango vya ujenzi."
+         },
+         "custom_fabrication": {
+            "title": "Uundaji Maalum wa Kioo na Chuma",
+            "description": "Huduma zetu za uundaji maalum hutoa suluhisho za glasi na chuma ambazo zinakidhi mahitaji ya kipekee ya usanifu na kazi."
+         },
+         "building_envelope": {
+            "title": "Suluhisho za Bahasha ya Jengo",
+            "description": "Tunatoa mifumo kamili ya bahasha ya jengo iliyoundwa kuboresha ufanisi wa nishati, ulinzi wa hali ya hewa, na utendaji wa kimuundo."
+         },
+         "structural_glazing": {
+            "title": "Ukaushaji wa Kimuundo wa Ndani na Nje",
+            "description": "Huduma zetu za ukaushaji wa kimuundo hutoa ujumuishaji salama na usio na mshono wa glasi kwa matumizi ya ndani na nje, kuongeza muundo wa kisasa wa usanifu."
+         },
+         "read_more": "Soma Zaidi"
+      },
+      "conclusion": {
+         "label": "Onyesho la Kazi",
+         "title": "Je, Uko Tayari Kupeleka Nafasi Yako Ngazi Inayofuata kwa Ubunifu wa Maono?",
+         "description": "Kwa miaka ya uzoefu wa vitendo katika ubunifu wa kifahari wa makazi na biashara, tunawawezesha wateja kubadilisha mazingira yao, kuboresha utendaji, na kuunda nafasi ambazo zinahamasisha kweli.",
+         "cta": "Pata Mashauriano ya Bure"
+      }
    }
 }

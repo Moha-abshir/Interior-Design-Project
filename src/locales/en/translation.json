@@ -170,5 +170,75 @@
             }
          }
       }
+   },
+   "services_page": {
+      "hero": {
+         "breadcrumb": "Home / Services",
+         "title": "Design <1>Services</1> That <br /> Elevate Every Space",
+         "description": "Whether shaping a private residence, a modern office, or a hospitality environment, our tailored services ensure each space reflects your vision.",
+         "cta": "Get Started",
+         "satisfied_customers": "Satisfied <br /> Customers"
+      },
+      "header": {
+         "title": "<1>Our Services.</1> Comprehensive Design Solutions, All in one place",
+         "description": "We provide fully integrated interior design solutions, guiding your project seamlessly from concept to completion while ensuring every detail reflects quality, purpose, and timeless appeal."
+      },
+      "services": {
+         "glass_solutions": {
+            "title": "Architectural Glass Solutions",
+            "description": "We provide high-quality architectural glass solutions designed for durability, safety, and modern aesthetics. Our systems enhance natural light, energy efficiency, and structural elegance in residential and commercial buildings."
+         },
+         "frameless_glass": {
+            "title": "Frameless Glass Systems",
+            "description": "Our frameless glass installations deliver a sleek, contemporary finish while maintaining structural integrity and safety, ideal for modern offices and commercial interiors."
+         },
+         "office_partitions": {
+            "title": "Office Partitioning Systems",
+            "description": "We design and install functional office partition systems that optimize space, improve privacy, and maintain a professional, modern appearance."
+         },
+         "aluminium_fabrication": {
+            "title": "Aluminium Fabrication & Installations",
+            "description": "Our aluminium fabrication services include precision-built structural and decorative systems tailored to project requirements, ensuring durability and refined finishes."
+         },
+         "curtain_wall": {
+            "title": "Curtain Wall Installation Services",
+            "description": "We deliver professionally engineered curtain wall systems that provide structural performance, weather resistance, and contemporary architectural appeal."
+         },
+         "pvc_plumbing": {
+            "title": "PVC Fittings & Plumbing Solutions",
+            "description": "We supply reliable, high-performance PVC fittings designed for efficient plumbing and drainage systems, ensuring durability and long-term functionality."
+         },
+         "shower_cubicle": {
+            "title": "Shower Cubicle Supply & Installation",
+            "description": "Our shower cubicle systems combine modern design with durable materials, providing elegant and functional bathroom solutions with professional installation."
+         },
+         "alucol_cladding": {
+            "title": "Alucol Cladding & Panel Systems",
+            "description": "We provide Alucol panel solutions that enhance building exteriors with strength, insulation, and contemporary architectural design."
+         },
+         "commercial_systems": {
+            "title": "Commercial Glass & Aluminium Systems",
+            "description": "We deliver integrated glass and aluminium solutions tailored to commercial developments, ensuring reliability, modern aesthetics, and compliance with building standards."
+         },
+         "custom_fabrication": {
+            "title": "Custom Glass & Metal Fabrication",
+            "description": "Our custom fabrication services provide tailored glass and metal solutions that meet unique architectural and functional requirements."
+         },
+         "building_envelope": {
+            "title": "Building Envelope Solutions",
+            "description": "We offer complete building envelope systems designed to improve energy efficiency, weather protection, and structural performance."
+         },
+         "structural_glazing": {
+            "title": "Interior & Exterior Structural Glazing",
+            "description": "Our structural glazing services provide secure and seamless glass integration for both interior and exterior applications, enhancing modern architectural design."
+         },
+         "read_more": "Read More"
+      },
+      "conclusion": {
+         "label": "Work Showcase",
+         "title": "Ready to Take Your Space to the Next Level with Visionary Design?",
+         "description": "With years of hands-on experience in luxury residential and commercial design, we empower clients to transform their environments, optimize functionality, and create spaces that truly inspire.",
+         "cta": "Get a Free Consultation"
+      }
    }
 }
