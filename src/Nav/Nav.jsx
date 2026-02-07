@@ -1,23 +1,50 @@
 import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect, useRef } from 'react';
 import ReactCountryFlag from "react-country-flag"
 import logo from '../assets/logo.png'
 import './Nav.css'
 
 export default function Nav() {
    const { t, i18n } = useTranslation();
+   const [showNav, setShowNav] = useState(true);
+   const lastScrollY = useRef(0);
+
+   useEffect(() => {
+      const controlNavbar = () => {
+         if (typeof window !== 'undefined') {
+            const currentScrollY = window.scrollY;
+            
+            // Hide if scrolling down and past 100px
+            // Show if scrolling up
+            if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+               setShowNav(false);
+            } else {
+               setShowNav(true);
+            }
+
+            lastScrollY.current = currentScrollY;
+         }
+      };
+
+      window.addEventListener('scroll', controlNavbar);
+
+      return () => {
+         window.removeEventListener('scroll', controlNavbar);
+      };
+   }, []);
+
+   const isSwahili = i18n.language.startsWith('sw');
 
    const toggleLanguage = () => {
       // Check if language starts with 'sw' to handle 'sw-KE' etc.
-      const isSwahili = i18n.language.startsWith('sw');
+      // const isSwahili = i18n.language.startsWith('sw'); // Already calculated above
       const newLang = isSwahili ? 'en' : 'sw';
       i18n.changeLanguage(newLang);
    };
 
-   const isSwahili = i18n.language.startsWith('sw');
-
    return (
-      <nav>
+      <nav className={!showNav ? 'nav-hidden' : ''}>
          <NavLink to="/" className="logo">
             <img src={logo} alt="logo" />
             <p>Mwama Graziers</p>
