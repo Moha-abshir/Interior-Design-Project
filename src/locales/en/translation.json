@@ -77,5 +77,24 @@
       "a5": "Yes, we manage the entire process. From sourcing furniture and materials to coordinating deliveries and final installation, we ensure a stress-free experience for our clients.",
       "q6": "What is included in the initial consultation?",
       "a6": "The initial consultation is a discovery session where we discuss your needs, budget, and style preferences. We also walk through the space (virtually or in-person) to understand its potential and limitations."
+   },
+   "footer": {
+      "tagline": "Empowering clients with visionary interiors that combine architectural spirit with modern functionality.",
+      "back_to_top": "Back to Top",
+      "sitemap": "Sitemap",
+      "links": {
+         "home": "Home",
+         "about": "About",
+         "services": "Services",
+         "portfolio": "Portfolio",
+         "contact": "Contact"
+      },
+      "legal": "Legal",
+      "legal_links": {
+         "privacy": "Privacy Policy",
+         "terms": "Terms of Service",
+         "notice": "Legal Notice"
+      },
+      "copyright": "© {{year}} Mwama Graziers. All rights reserved."
    }
 }
