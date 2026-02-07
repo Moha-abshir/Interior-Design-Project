@@ -150,7 +150,7 @@
 .trust-overlay {
    width: 100%;
    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
-   padding: 3rem 5%;
+   padding: 2rem 5%;
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
@@ -203,7 +203,6 @@
    border-color: white;
 }
 
-/* Animations */
 .slide-in-left {
    animation: slideInLeft 1s ease-out forwards;
 }
@@ -217,37 +216,352 @@
 }
 
 @keyframes slideInLeft {
-   from {
+   0% {
       opacity: 0;
       transform: translateX(-50px);
    }
 
-   to {
+   100% {
       opacity: 1;
       transform: translateX(0);
    }
 }
 
 @keyframes slideInRight {
-   from {
+   0% {
       opacity: 0;
       transform: translateX(50px);
    }
 
-   to {
+   100% {
       opacity: 1;
       transform: translateX(0);
    }
 }
 
 @keyframes slideUp {
-   from {
+   0% {
       opacity: 0;
       transform: translateY(50px);
    }
 
-   to {
+   100% {
       opacity: 1;
       transform: translateY(0);
    }
 }
+
+/*End of Animations */
+/*Start of Team Section */
+.team-section {
+   padding: 4rem 2rem;
+   overflow: hidden;
+}
+
+.team-intro {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.team-intro h3 {
+   font-size: clamp(1.2rem, 2.4vw, 2rem);
+   font-weight: bold;
+   margin-bottom: 1rem;
+   color: #006eff;
+   width: 40%;
+   opacity: 0;
+   transform: translateX(-50px);
+   transition: opacity 0.5s ease-out;
+}
+
+.team-intro p {
+   font-size: clamp(1rem, 1vw, 1.2rem);
+   color: #666;
+   width: 50%;
+   text-align: justify;
+   opacity: 0;
+   transform: translateX(50px);
+   transition: opacity 0.5s ease-out;
+}
+
+.team-grid {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 2rem;
+   padding: 0 1rem;
+   opacity: 0;
+   transform: translateY(50px);
+   transition: opacity 0.5s ease-out;
+}
+
+.team-card {
+   position: relative;
+   width: 280px;
+   height: 350px;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out;
+   flex: 0 1 23%;
+}
+
+@media (max-width: 1200px) {
+   .team-card {
+      flex: 0 1 30%;
+   }
+}
+
+@media (max-width: 900px) {
+   .team-card {
+      flex: 0 1 45%;
+   }
+}
+
+@media (max-width: 600px) {
+   .team-card {
+      flex: 0 1 100%;
+      width: 100%;
+      max-width: 350px;
+   }
+}
+
+.team-card:hover {
+   transform: translateY(-10px);
+}
+
+.team-image {
+   width: 100%;
+   height: 100%;
+}
+
+.team-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.team-info {
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+   right: 10px;
+   background: white;
+   padding: 1rem;
+   border-radius: 8px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-details {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+
+.team-details h4 {
+   font-size: 1rem;
+   font-weight: 700;
+   color: #333;
+   margin-bottom: 0.2rem;
+}
+
+.team-details span {
+   font-size: 0.8rem;
+   color: #777;
+}
+
+.team-socials {
+   display: flex;
+   gap: 0.5rem;
+}
+
+.team-socials a {
+   color: #006eff;
+   font-size: 1.2rem;
+   transition: color 0.3s;
+}
+
+.team-socials a:hover {
+   color: #004bb5;
+}
+
+/*End of Team Section */
+
+/* Start of Why Choose Us Section */
+.why-choose-us {
+   padding: 4rem 5%;
+   background-color: #f9f9f9;
+}
+
+.why-header {
+   margin-bottom: 3rem;
+}
+
+.why-header .pill {
+   display: inline-block;
+   padding: 0.5rem 1rem;
+   border: 1px solid #ddd;
+   border-radius: 50px;
+   font-size: 0.9rem;
+   font-weight: 600;
+   color: #666;
+   margin-bottom: 1rem;
+   background: white;
+}
+
+.why-header h2 {
+   font-size: clamp(2rem, 3.5vw, 3.5rem);
+   font-weight: 600;
+   color: #333;
+   max-width: 800px;
+}
+
+.why-header .highlight {
+   color: #006eff;
+}
+
+.why-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: auto auto;
+   gap: 1.5rem;
+}
+
+.why-card {
+   background: white;
+   padding: 2rem;
+   border-radius: 16px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 1rem;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-1 {
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+}
+
+.card-2 {
+   grid-column: 2 / 3;
+   grid-row: 1 / 2;
+}
+
+.card-3 {
+   grid-column: 3 / 4;
+   grid-row: 1 / 3;
+   background-color: #003366;
+   /* Deep Blue from image reference */
+   color: white;
+   justify-content: center;
+}
+
+.card-4 {
+   grid-column: 1 / 3;
+   grid-row: 2 / 3;
+}
+
+.icon-circle {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: 1px solid #eee;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   color: #333;
+   margin-bottom: 0.5rem;
+}
+
+.featured .icon-circle {
+   border-color: rgba(255, 255, 255, 0.2);
+   color: white;
+}
+
+.why-card h3 {
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+.why-card p {
+   font-size: 1rem;
+   color: #666;
+   line-height: 1.6;
+}
+
+.featured p {
+   color: rgba(255, 255, 255, 0.9);
+}
+
+.why-btn {
+   margin-top: auto;
+   padding: 0.8rem 1.5rem;
+   background-color: #006eff;
+   /* Green from image reference */
+   color: white;
+   border: none;
+   border-radius: 50px;
+   font-weight: bold;
+   font-size: 1rem;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   transition: transform 0.2s;
+}
+
+.why-btn:hover {
+   transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+   .why-grid {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .card-1 {
+      grid-column: 1 / 2;
+      grid-row: 1;
+   }
+
+   .card-2 {
+      grid-column: 2 / 3;
+      grid-row: 1;
+   }
+
+   .card-3 {
+      grid-column: 1 / 3;
+      grid-row: 3;
+   }
+
+   /* Move to bottom on tablet */
+   .card-4 {
+      grid-column: 1 / 3;
+      grid-row: 2;
+   }
+}
+
+@media (max-width: 600px) {
+   .why-grid {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+/* End of Why Choose Us Section */
