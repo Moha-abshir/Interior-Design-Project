@@ -96,5 +96,79 @@
          "notice": "Legal Notice"
       },
       "copyright": "© {{year}} Mwama Graziers. All rights reserved."
+   },
+   "about": {
+      "hero": {
+         "title": "Designing Beyond Aesthetics, Building <1>Lasting</1> Impressions",
+         "description": "Every project is shaped by creativity, precision, and collaboration. We don’t just design spaces — we curate experiences that reflect personality and elevate everyday living.",
+         "cta": "Schedule a Consultation"
+      },
+      "intro": {
+         "title": "How Our Interior Design Journey Started",
+         "description": "From humble beginnings to becoming a recognized name in interior design, our journey is a testament to passion, perseverance, and a relentless pursuit of excellence."
+      },
+      "journey": {
+         "foundation": {
+            "title": "The Foundation",
+            "description": "Every journey begins with intention. During these early years, the vision was shaped, skills were refined, and a passion for transforming spaces began to take form. What started as creative exploration quickly evolved into purposeful design driven by detail and dedication."
+         },
+         "momentum": {
+            "title": "Building Momentum",
+            "description": "With growing confidence and experience, projects expanded in scale and complexity. Each completed space strengthened our reputation for precision, creativity, and client-centered design. This period marked the transition from promise to proven excellence."
+         },
+         "craft": {
+            "title": "Refining the Craft",
+            "description": "Innovation met maturity. Design philosophy became clearer, processes more structured, and collaborations more meaningful. These years were defined by bold concepts, elevated execution, and interiors that blended functionality with distinctive elegance."
+         },
+         "vision": {
+            "title": "Elevating the Vision",
+            "description": "Today, the studio stands as a refined creative force. With a growing portfolio and an unwavering commitment to quality, we continue to design environments that reflect sophistication, intention, and timeless appeal — always pushing boundaries while honoring our core values."
+         }
+      },
+      "trust": {
+         "mission": {
+            "title": "Our Mission",
+            "message": "We strive to offer professional, reliable, and flexible virtual assistant services that enhance efficiency and productivity."
+         },
+         "vision": {
+            "title": "Our Vision",
+            "message": "To be the leading provider of innovative interior solutions, transforming ordinary spaces into extraordinary experiences through creativity and dedication."
+         },
+         "motive": {
+            "title": "Our Motive",
+            "message": "Driven by the desire to create harmony and beauty, we believe that design should not only look good but feel good, improving the quality of life for everyone."
+         },
+         "inspiration": {
+            "title": "Our Inspiration",
+            "message": "Nature, art, and the unique stories of our clients inspire every project. We find beauty in details and translate them into timeless designs."
+         }
+      },
+      "team": {
+         "title": "Meet Our Team",
+         "description": "Our team is a blend of creativity, expertise, and a shared passion for interior design. Each member brings unique skills and perspectives to every project, ensuring that every space is not just designed but transformed into a reflection of its unique character."
+      },
+      "why_choose_us": {
+         "pill": "WHY CHOOSE US",
+         "title": "Why <1>Mwama Graziers</1> is The Right Choice for You",
+         "cards": {
+            "visionary": {
+               "title": "Visionary Design",
+               "description": "Our expert designers blend aesthetics with functionality to create spaces that are not just beautiful, but truly livable."
+            },
+            "sustainable": {
+               "title": "Sustainable Solutions",
+               "description": "We prioritize eco-friendly materials and energy-efficient designs, ensuring your space is as kind to the planet as it is to you."
+            },
+            "client_centric": {
+               "title": "Client-Centric Philosophy",
+               "description": "Your vision is our blueprint. We prioritize open communication and personalized service to ensure your space reflects your unique style. Whether residential or commercial, we tailor every detail to you.",
+               "cta": "Start Your Project"
+            },
+            "comprehensive": {
+               "title": "Comprehensive Service",
+               "description": "From initial concept to final installation, we handle every aspect of the project. Our end-to-end service includes procurement, contractor coordination, and styling, ensuring a seamless and stress-free experience."
+            }
+         }
+      }
    }
 }

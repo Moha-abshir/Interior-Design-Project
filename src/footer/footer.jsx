@@ -55,6 +55,13 @@ export default function Footer() {
                             <li><NavLink to="/legal">{t('footer.legal_links.notice')}</NavLink></li>
                         </ul>
                     </div>
+                    <div className="footer-column">
+                        <h3>Inquiries</h3>
+                        <ul>
+                            <li>0729 940 874</li>
+                            <li>0784 508 948</li> 
+                        </ul>
+                    </div>
                 </div>
             </div>
             

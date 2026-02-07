@@ -8,9 +8,13 @@ export default function Nav() {
    const { t, i18n } = useTranslation();
 
    const toggleLanguage = () => {
-      const newLang = i18n.language === 'en' ? 'sw' : 'en';
+      // Check if language starts with 'sw' to handle 'sw-KE' etc.
+      const isSwahili = i18n.language.startsWith('sw');
+      const newLang = isSwahili ? 'en' : 'sw';
       i18n.changeLanguage(newLang);
    };
+
+   const isSwahili = i18n.language.startsWith('sw');
 
    return (
       <nav>
@@ -25,12 +29,12 @@ export default function Nav() {
                <li><NavLink to="/portfolio">{t('nav.portfolio')}</NavLink></li>
          </ul>
          
-         <div className={`lang-toggle ${i18n.language === 'sw' ? 'sw-active' : ''}`} onClick={toggleLanguage}>
+         <div className={`lang-toggle ${isSwahili ? 'sw-active' : ''}`} onClick={toggleLanguage}>
              <div className="toggle-text-en">English</div>
              <div className="toggle-text-sw">Kiswahili</div>
              <div className="toggle-thumb">
                 <ReactCountryFlag 
-                    countryCode={i18n.language === 'en' ? 'US' : 'KE'} 
+                    countryCode={isSwahili ? 'KE' : 'US'} 
                     svg 
                     style={{
                         width: '100%',
